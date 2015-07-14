@@ -37,7 +37,7 @@ public class ClockProvider extends AppWidgetProvider {
 	private static final int RED = 4;
 	private static final float STROKE_WIDTH = 12;
 	private static int currentColor = 0;
-	private static int onColor = Color.argb(0, 0, 255, 255);
+	private static int onColor = Color.RED;
 	private static int offColor = Color.argb(255, 0, 255, 0);
 
 	// Time Control

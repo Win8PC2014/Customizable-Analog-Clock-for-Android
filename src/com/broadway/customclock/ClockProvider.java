@@ -39,6 +39,7 @@ public class ClockProvider extends AppWidgetProvider {
 	private static int currentColor = 0;
 	private static int onColor = Color.YELLOW;
 	private static int offColor = Color.argb(255, 0, 255, 0);
+	private static int bgColor = Color.BLACK;
 
 	// Time Control
 	private static int currentTime = 0;
@@ -216,6 +217,7 @@ public class ClockProvider extends AppWidgetProvider {
 	}
 
 	private static void drawBackground(Canvas widgeCanv, Paint widgePaint){
+		widgeCanv.drawColor(bgColor);
 		widgeCanv.drawCircle(CANVAS_SIZE/2, CANVAS_SIZE/2, (float) (CANVAS_SIZE*0.4), widgePaint);
 	}
 	
